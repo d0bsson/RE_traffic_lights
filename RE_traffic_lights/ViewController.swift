@@ -7,7 +7,7 @@
 
 import UIKit
 
-enum CurrentLught {
+enum CurrentLight {
     case red, yellow, green
 }
 
@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var startButton: UIButton!
     
     
-    private var currentLight = CurrentLught.red
+    private var currentLight = CurrentLight.red
     private var lightIsOn: CGFloat = 1
     private var lightIsOff: CGFloat = 0.3
     
@@ -39,11 +39,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func startButtonPressed() {
+        if startButton.currentTitle == "START" {
+            startButton.setTitle("NEXT", for: .normal)
+        }
         
         switch currentLight {
         case .red:
-            startButton.setTitle("NEXT", for: .normal)
-            
             currentLight = .yellow
             redLabel.alpha = lightIsOn
             greenLabel.alpha = lightIsOff
