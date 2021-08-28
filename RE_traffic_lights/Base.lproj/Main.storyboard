@@ -18,7 +18,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IxC-6r-Wac">
                                 <rect key="frame" x="106.5" y="182" width="107" height="107.5"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="25d-HD-wDJ">
                                 <rect key="frame" x="106.5" y="45" width="107" height="107"/>
@@ -29,7 +29,7 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ohS-7S-jPe">
                                 <rect key="frame" x="106.5" y="322.5" width="107" height="107"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xx-Qy-ZTs">
                                 <rect key="frame" x="107.5" y="435" width="105" height="52"/>
@@ -38,7 +38,7 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="START"/>
                                 <connections>
-                                    <action selector="startButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="fjJ-R9-w36"/>
+                                    <action selector="startButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="sfB-pZ-jiJ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -62,8 +62,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="redLabel" destination="IxC-6r-Wac" id="15r-rF-vlO"/>
-                        <outlet property="startButton" destination="1xx-Qy-ZTs" id="L8U-wx-qC6"/>
+                        <outlet property="greenLabel" destination="ohS-7S-jPe" id="1bw-KZ-4xk"/>
+                        <outlet property="redLabel" destination="25d-HD-wDJ" id="0XP-ta-gB6"/>
+                        <outlet property="startButton" destination="1xx-Qy-ZTs" id="60g-we-LGx"/>
+                        <outlet property="yellowLabel" destination="IxC-6r-Wac" id="d9I-g4-pjb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -75,8 +77,14 @@
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
