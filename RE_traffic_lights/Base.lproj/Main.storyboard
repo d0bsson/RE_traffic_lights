@@ -19,7 +19,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="ws6-qK-1fM">
                                 <rect key="frame" x="107" y="103" width="200" height="644"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="Fgb-mI-zLN">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="Fgb-mI-zLN">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="644"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IxC-6r-Wac">
@@ -36,18 +36,21 @@
                                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                             </view>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Fgb-mI-zLN" secondAttribute="height" multiplier="50:161" id="Ntz-Vn-Utg"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="Fgb-mI-zLN" firstAttribute="centerX" secondItem="ws6-qK-1fM" secondAttribute="centerX" id="YqP-an-9Cn"/>
+                                    <constraint firstItem="Fgb-mI-zLN" firstAttribute="centerX" secondItem="ws6-qK-1fM" secondAttribute="centerX" id="Y83-0s-Yiv"/>
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xx-Qy-ZTs">
                                 <rect key="frame" x="132" y="779" width="150" height="52"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="BWS-wd-aKK"/>
-                                    <constraint firstAttribute="height" constant="52" id="dzY-8t-Vlb"/>
+                                    <constraint firstAttribute="height" constant="52" id="DuU-1S-gbv"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="k4N-ni-RIG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -57,13 +60,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fgb-mI-zLN" secondAttribute="trailing" constant="107" id="Goj-ao-gAg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1xx-Qy-ZTs" secondAttribute="bottom" constant="31" id="HPh-rZ-zRc"/>
-                            <constraint firstItem="Fgb-mI-zLN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="LBj-Hg-okH"/>
-                            <constraint firstItem="1xx-Qy-ZTs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="WFe-Ff-LU0"/>
-                            <constraint firstItem="Fgb-mI-zLN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="59" id="nlh-1g-zeg"/>
-                            <constraint firstItem="1xx-Qy-ZTs" firstAttribute="top" secondItem="Fgb-mI-zLN" secondAttribute="bottom" constant="32" id="ts1-vE-Zbh"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1xx-Qy-ZTs" secondAttribute="trailing" constant="132" id="zdR-la-U8b"/>
+                            <constraint firstItem="Fgb-mI-zLN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="59" id="4DP-Zt-aSw"/>
+                            <constraint firstItem="1xx-Qy-ZTs" firstAttribute="top" secondItem="Fgb-mI-zLN" secondAttribute="bottom" constant="32" id="4Oy-fX-R4K"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1xx-Qy-ZTs" secondAttribute="trailing" constant="132" id="EXG-Ve-KQW"/>
+                            <constraint firstItem="Fgb-mI-zLN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="U8m-U4-pYF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1xx-Qy-ZTs" secondAttribute="bottom" constant="31" id="WxJ-oe-YvO"/>
+                            <constraint firstItem="1xx-Qy-ZTs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="l3e-5L-9ca"/>
                         </constraints>
                     </view>
                 </viewController>
